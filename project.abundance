@@ -4,10 +4,73 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1745094402784,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "circle",
+            "ioValue": 10
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1745094414238,
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Input",
+            "name": "circle",
+            "x": 0.04,
+            "y": 0.2106537530266344,
+            "uniqueID": 1745094507998,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "geometry"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.11979166666666667,
+            "y": 0.3583535108958838,
+            "uniqueID": 1745094938193,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.18020833333333333,
+            "y": 0.4939467312348669,
+            "uniqueID": 1745094951458,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.20364583333333333,
+            "y": 0.23002421307506055,
+            "uniqueID": 1745095111470,
+            "ioValues": [],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 0
+        }
+    ],
     "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
