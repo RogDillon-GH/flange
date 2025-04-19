@@ -16,10 +16,15 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.5322916666666667,
+            "y": 0.43825665859564167,
             "uniqueID": 1745094414238,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1745095415246
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -49,8 +54,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.3260416666666667,
-            "y": 0.639225181598063,
+            "x": 0.3494791666666667,
+            "y": 0.4915254237288136,
             "uniqueID": 1745095415246,
             "ioValues": [
                 {
@@ -81,8 +86,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.33854166666666663,
-            "y": 0.1864406779661017,
+            "x": 0.35052083333333334,
+            "y": 0.27602905569007263,
             "uniqueID": 1745095714300,
             "ioValues": [
                 {
@@ -104,6 +109,13 @@
             "ap2Primary": true,
             "ap1ID": 1745094951458,
             "ap2ID": 1745095415246
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1745095415246,
+            "ap2ID": 1745094414238
         },
         {
             "ap1Name": "geometry",
