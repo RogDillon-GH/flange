@@ -55,7 +55,39 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": 1745094951458
+                },
+                {
+                    "name": "height",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.17864583333333334,
+            "y": 0.18401937046004843,
+            "uniqueID": 1745095577985,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 400
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.33854166666666663,
+            "y": 0.1864406779661017,
+            "uniqueID": 1745095714300,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1745095577985
                 },
                 {
                     "name": "height",
@@ -65,7 +97,22 @@
             "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1745094951458,
+            "ap2ID": 1745095415246
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1745095577985,
+            "ap2ID": 1745095714300
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
