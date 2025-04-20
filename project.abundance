@@ -19,7 +19,12 @@
             "x": 0.5322916666666667,
             "y": 0.43825665859564167,
             "uniqueID": 1745094414238,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1745095415246
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -35,8 +40,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.25104166666666666,
-            "y": 0.5278450363196125,
+            "x": 0.17291666666666666,
+            "y": 0.4721549636803874,
             "uniqueID": 1745094951458,
             "ioValues": [
                 {
@@ -45,6 +50,24 @@
                 }
             ],
             "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.3494791666666667,
+            "y": 0.4915254237288136,
+            "uniqueID": 1745095415246,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1745094951458
+                },
+                {
+                    "name": "height",
+                    "ioValue": 200
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         },
         {
             "atomType": "Circle",
@@ -63,8 +86,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.35052083333333334,
-            "y": 0.27602905569007263,
+            "x": 0.35833333333333334,
+            "y": 0.2542372881355932,
             "uniqueID": 1745095714300,
             "ioValues": [
                 {
@@ -77,23 +100,23 @@
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.1734375,
-            "y": 0.48426150121065376,
-            "uniqueID": 1745099436575,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1745094951458,
+            "ap2ID": 1745095415246
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1745095415246,
+            "ap2ID": 1745094414238
+        },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
